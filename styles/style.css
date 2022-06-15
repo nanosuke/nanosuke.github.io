@@ -1,0 +1,36 @@
+html {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background-color: #f5e4e4;
+}
+
+h1 {
+  margin: 0; /*何も文字を書いていなくても、CSSを適用しないと、規定のスタイルが適用される。隙間ができたりする*/
+  padding: 20px 0;
+  text-shadow: 3px 3px 1px black; /*テキストに影を適用　水平オフセット(どれだけ横に移動するか)・垂直オフセット(どれだけ下に移動するか)・ぼかす範囲・影の基本色　の順番*/
+}
+
+h3 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto; /*最初の値は要素の上下の辺、２つめの値は左右に影響する autoは均等に配分する*/
+  padding: 0 20px 20px 20px; /*値は、上・右・下・左の順*/
+  border: 5px solid black; /*協会の太さ、スタイル、色の値*/
+}
+
+/*画像がインライン要素であるため、マージンやその他の余白を開ける値を適用できない*/
+img {
+  display: block; /*画像にブロックレベルの動作をしていする必要がある*/
+  margin: 0 auto;
+  width: 500px;
+}
